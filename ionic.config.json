@@ -1,0 +1,7 @@
+{
+  "name": "thalappakattuAdmin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
