@@ -1,0 +1,62 @@
+<div class="x">
+  <ion-toolbar color="basic">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-title>Add Vendor</ion-title>
+  </ion-toolbar>
+</div>
+
+
+<ion-content>
+  <ion-content class="vendorForm">
+
+    <ion-item lines="full">
+      <ion-label position="floating">First name</ion-label>
+      <ion-input type="text" [(ngModel)]="vendor.FistName"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Last name</ion-label>
+      <ion-input type="text" [(ngModel)]="vendor.LastName"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email Id</ion-label>
+      <ion-input type="email" [(ngModel)]="vendor.Email" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Mobile</ion-label>
+      <ion-input type="number" [(ngModel)]="vendor.Mobile" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Address</ion-label>
+      <ion-input type="text" [(ngModel)]="vendor.Address" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">VendorType</ion-label>
+     
+     
+        <ion-select placeholder="Select Vendor" [(ngModel)]="vendor.VendorTypeId">
+          <ion-select-option value="Market" id="1">Market</ion-select-option>
+          <ion-select-option value="Market" id="2">Chicken Shope</ion-select-option>
+          <ion-select-option value="Market" id="3">Banana</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Shope Name</ion-label>
+        <ion-input type="text" [(ngModel)]="vendor.ShopeName" required></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="vendor.Password" required></ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="setLoginData()" expand="">Add</ion-button>
+        </ion-col>
+      </ion-row>
+
+</ion-content>
+</ion-content>
+

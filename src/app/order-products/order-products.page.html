@@ -1,0 +1,51 @@
+<div class="x">
+  <ion-toolbar color="basic">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-title>Place New Order</ion-title>
+  </ion-toolbar>
+</div>
+<ion-content>
+  <ion-segment scrollable [(ngModel)]="type" >
+    <ion-segment-button *ngFor="let category of categories;let i = index;" value="{{category}}"  (click)="click(i)">
+      {{category}}
+    </ion-segment-button>
+  </ion-segment>
+  <div class="y">
+    <ion-slides #slide (ionSlideDidChange)="hai($event)">
+    <ion-slide *ngFor="let category of categories;">
+      <div class="card card_list">
+        <div class="card-header card_list_header">
+          <button type="button" class="btn btn-success btn-rounded view_history"(click)="goOrderhistory()" >View History</button>
+          <button type="button" class="btn btn-danger btn-rounded" (click)="goOrder()">Place Order</button>
+        </div>
+        <hr>
+        <div class="card-body">
+            <ol class="list-group list-group-light list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  தக்காளி
+                </div>
+                <span >100 kg</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  வெண்டைக்காய்
+                </div>
+                <span >150 kg</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  உருளைக்கிழங்கு
+                </div>
+                <span >50 kg</span>
+              </li>
+            </ol>
+        </div>
+      </div>
+      
+    </ion-slide>
+  </ion-slides>
+</div>
+</ion-content>

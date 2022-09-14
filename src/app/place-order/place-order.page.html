@@ -1,0 +1,192 @@
+<div class="x">
+  <ion-toolbar color="basic">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-title>Market</ion-title>
+  </ion-toolbar>
+</div>
+
+<ion-content>
+  <ul class="list-group list-group-light">
+    <li class="list-group-item ">
+      <div class="row">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <img src="https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?cs=srgb&dl=pexels-pixabay-533280.jpg&fm=jpg" alt="" style="width: 45px; height: 45px"
+              class="rounded-circle product" />
+            <div class="ms-2">
+              <p class="fw-bold mb-1">தக்காளி</p>
+              <p class="text-muted mb-0">100 Kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group row">
+            <div class="col-xs-2">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">.Kg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <input class="form-check-input check_order" type="checkbox" value="" id="flexCheckChecked" checked/></div>
+      </div>
+    </li>
+    <li class="list-group-item ">
+      <div class="row">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <img src="https://cdn.shopify.com/s/files/1/0522/4149/8278/products/ladyfinger_600x.jpg?v=1655522463" alt="" style="width: 45px; height: 45px"
+              class="rounded-circle product" />
+            <div class="ms-2">
+              <p class="fw-bold mb-1">வெண்டைக்காய்</p>
+              <p class="text-muted mb-0">100 Kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group row">
+            <div class="col-xs-2">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">.Kg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <input class="form-check-input check_order" type="checkbox" value="" id="flexCheckChecked" checked/></div>
+      </div>
+    </li>
+    <li class="list-group-item ">
+      <div class="row">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8JIx3Oho_tGe7mQo84Vrcs2vy_uhzUhHN30ZLhI56IH97QnxxUXYLJJ2EFQGC4xmfQKY&usqp=CAU" alt="" style="width: 45px; height: 45px"
+              class="rounded-circle product" />
+            <div class="ms-2">
+              <p class="fw-bold mb-1">வெங்காயம்</p>
+              <p class="text-muted mb-0">100 Kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group row">
+            <div class="col-xs-2">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">.Kg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <input class="form-check-input check_order" type="checkbox" value="" id="flexCheckChecked" checked/></div>
+      </div>
+    </li>
+    <li class="list-group-item ">
+      <div class="row">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <img src="https://img3.exportersindia.com/product_images/bc-full/dir_108/3213069/drumstick-1385104.jpg" alt="" style="width: 45px; height: 45px"
+              class="rounded-circle product" />
+            <div class="ms-2">
+              <p class="fw-bold mb-1">முருங்கைக்காய்</p>
+              <p class="text-muted mb-0">10 PCS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group row">
+            <div class="col-xs-2">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">.PCS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <input class="form-check-input check_order" type="checkbox" value="" id="flexCheckChecked" checked/></div>
+      </div>
+    </li>
+  </ul>
+  <button type="button" id="open-modal1" class="btn btn-info checkout">Place Order</button>
+</ion-content>
+
+<ion-modal #modal trigger="open-modal1" [presentingElement]="presentingElement" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+  <ng-template>
+    <ion-header>
+      <div class="x">
+      <ion-toolbar color="basic">
+        <ion-title>Select Vendor</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="modal.dismiss()"><ion-icon name="close-outline"></ion-icon></ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </div>
+    </ion-header>
+    <ion-content>
+      <ul class="list-group list-group-light">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+              class="rounded-circle" />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">John Doe</p>
+              <p class="text-muted mb-0">john.doe@gmail.com</p>
+            </div>
+          </div>
+          <a  role="button">
+            <div class="form-check">
+              <input class="form-check-input vendor_radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+            </div>
+          </a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+              style="width: 45px; height: 45px" />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Alex Ray</p>
+              <p class="text-muted mb-0">alex.ray@gmail.com</p>
+            </div>
+          </div>
+          <a  role="button">
+            <div class="form-check">
+              <input class="form-check-input vendor_radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+            </div>
+          </a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" >
+          <div class="d-flex align-items-center" >
+            <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
+              style="width: 45px; height: 45px" />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Kate Hunington</p>
+              <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+            </div>
+          </div>
+      
+          <a  role="button">
+            <div class="form-check">
+              <input class="form-check-input vendor_radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-info checkout" (click)="placeOrder()">Place Order</button>
+    </ion-content>
+  </ng-template>
+</ion-modal>

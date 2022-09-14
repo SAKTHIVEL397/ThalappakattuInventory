@@ -1,0 +1,42 @@
+<div class="x">
+  <ion-toolbar color="basic">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</div>
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1>Welcom to Hari Thalapakatti biriyani</h1>
+      <p>sign into continue</p>
+    </div>
+
+    <div class="login-form ">
+      <div class="form-input">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">Email Id</ion-label>
+          <ion-input type="email" [(ngModel)]="register.UserId"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+
+        <ion-item>
+          <ion-label position="floating">User Id</ion-label>
+          <ion-input type="text" [(ngModel)]="register.UserId"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+    <div class="form-input">
+      <ion-button (click)="setLoginData()" expand="full" color="medium"  class="login-button">log In</ion-button>
+      
+    </div>
+    <div>
+      <p>Forgot Password</p>
+      <a size="large" fill="outline">Sign Up</a>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,93 @@
+
+ion-content {
+  /*--background:linear-gradient(0deg,rgba(0,0,0,7)),
+    url("/assets/images.jpg") no-repeat center center  cover;*/
+  --ion-background-color: #ffffff;
+}
+.login-section {
+  height: 74vh;
+  width: 100%;
+  max-width: 500px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  margin: auto;
+  border-radius: 25px;
+  background-color: #ffbd35;
+}
+.heading{
+ margin-top:20px;
+ h1{
+     font-size:1.6rem;
+     font-weight:bolder;
+
+ }
+ p{
+margin-top:20px;
+font-size:1.5rem;
+color:#000000;
+
+ }
+}
+.login-form {
+  .form-input {
+    position: relative;
+    margin-bottom: 10px;
+
+    ion-item {
+      padding-left: 0;
+     
+    }
+
+    ion-icon {
+      position: absolute;
+      top: 20px;
+      z-index: 2;
+      font-size: 2rem;
+      left: 5px;
+    }
+
+    ion-label {
+      position: absolute;
+      margin-left: 35px;
+      font-weight: bolder;
+      font-size: 2rem;
+      top: 3px;
+    
+    }
+
+    ion-input {
+      font-size: 2rem;
+      --padding-start: 36px;
+      --padding-top: 36px;
+     
+    }
+
+  
+  }
+  /*.action-buttons {
+    text-align: center;
+
+    .login-button {
+      --background: #f9b801;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #7b7b7b;
+  }
+
+  .signup-button {
+    --border-color: #ff6a00 color:#000000;
+    margin-top: 30px;
+  }*/
+}
+.x{
+  background: yellow !important;
+}
+ion-back-button{
+  display: block;
+}

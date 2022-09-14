@@ -1,0 +1,51 @@
+<div class="x">
+  <ion-toolbar color="basic">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-title>Add Staff</ion-title>
+  </ion-toolbar>
+</div>
+
+<ion-content>
+  <ion-content class="staffForm">
+
+    <ion-item lines="full">
+      <ion-label position="floating">First name</ion-label>
+      <ion-input type="text" [(ngModel)]="staff.FistName"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Last name</ion-label>
+      <ion-input type="text" [(ngModel)]="staff.LastName"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email Id</ion-label>
+      <ion-input type="text" [(ngModel)]="staff.Email" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Mobile</ion-label>
+      <ion-input type="number" [(ngModel)]="staff.Mobile" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">RoleType</ion-label>
+      <ion-select placeholder="Select Vendor" [(ngModel)]="staff.RoleTypeId">
+        <ion-select-option value="Market" id="1">Admin</ion-select-option>
+        <ion-select-option value="Market" id="2">Worker</ion-select-option>
+     
+      </ion-select>
+    </ion-item>
+   
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="staff.Password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="setLoginData()" expand="">Add</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-content>
+</ion-content>
